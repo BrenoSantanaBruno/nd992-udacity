@@ -1,0 +1,186 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-048f6ed62451373d9",
+                    "InstanceId": "i-0542844daefd69cbd",
+                    "InstanceType": "t2.micro",
+                    "KeyName": "vockey",
+                    "LaunchTime": "2023-04-29T09:04:52+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-east-1a",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-172-31-19-216.ec2.internal",
+                    "PrivateIpAddress": "172.31.19.216",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 80,
+                        "Name": "stopped"
+                    },
+                    "StateTransitionReason": "User initiated",
+                    "SubnetId": "subnet-0144179a8413e20c7",
+                    "VpcId": "vpc-0b4f6ee0b90b68975",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2023-04-28T23:24:35+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0246612bcc6df09b5"
+                            }
+                        },
+                        {"DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2023-04-28T23:24:35+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-04e10f012a615987f"
+                            }
+                        }
+                    ],
+                    "ClientToken": "Cours-EC2In-191UPLIWUOHJ0",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2023-04-28T23:24:35+00:00",
+                                "AttachmentId": "eni-attach-038b3278bf9ef6177",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "securityGroupOne",
+                                    "GroupId": "sg-0f83b87c8f46530f4"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "0a:35:ea:33:79:b7",
+                            "NetworkInterfaceId": "eni-0f00ced4963ab6191",
+                            "OwnerId": "759936737407",
+                            "PrivateDnsName": "ip-172-31-19-216.ec2.internal",
+                            "PrivateIpAddress": "172.31.19.216",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-19-216.ec2.internal",
+                                    "PrivateIpAddress": "172.31.19.216"
+                                }
+                            ],
+                            "SourceDestCheck": true, "Status": "in-use",
+                            "SubnetId": "subnet-0144179a8413e20c7",
+                            "VpcId": "vpc-0b4f6ee0b90b68975",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "securityGroupOne",
+                            "GroupId": "sg-0f83b87c8f46530f4"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "StateReason": {
+                        "Code": "Client.InstanceInitiatedShutdown",
+                        "Message": "Client.InstanceInitiatedShutdown: Instance initiated shutdown"
+                    },
+                    "Tags": [
+                        {
+                            "Key": "Name",
+                            "Value": "LAMP01"
+                        },
+                        {
+                            "Key": "SnapshotAutomation",
+                            "Value": "LAMP01Snapshot"
+                        },
+                        {
+                            "Key": "aws:cloudformation:stack-name",
+                            "Value": "Course4Resources"
+                        },
+                        {
+                            "Key": "aws:cloudformation:stack-id",
+                            "Value": "arn:aws:cloudformation:us-east-1:759936737407:stack/Course4Resources/ceaf3dd0-e61b-11ed-b19b-12bcd2b05feb"
+                        },
+                        {
+                            "Key": "aws:cloudformation:logical-id",
+                            "Value": "EC2Instance"
+                        }],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2023-04-28T23:24:35+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    },
+                    "CurrentInstanceBootMode": "legacy-bios"
+                }
+            ],
+            "OwnerId": "759936737407",
+            "RequesterId": "043234062703",
+            "ReservationId": "r-00b459bc9ef0a40b2"
+        }
+ ]
+}
+
+
+
+{
+    "Snapshots": [
+        {
+            "Description": "SAC4T4",
+            "Encrypted": false,
+            "OwnerId": "759936737407",
+            "Progress": "100%",
+            "SnapshotId": "snap-09a091fe0d082df9b",
+            "StartTime": "2023-04-29T07:03:23.415000+00:00",
+            "State": "completed",
+            "VolumeId": "vol-01978923a790f4c04",
+            "VolumeSize": 8,
+            "StorageTier": "standard"
+        }
+    ]
+}

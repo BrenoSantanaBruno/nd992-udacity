@@ -1,0 +1,174 @@
+{
+    "Reservations": [
+        {
+            "Groups": [],
+            "Instances": [
+                {
+                    "AmiLaunchIndex": 0,
+                    "ImageId": "ami-048f6ed62451373d9",
+                    "InstanceId": "i-0aae268e087627536",
+                    "InstanceType": "t2.micro",
+                    "KeyName": "vockey",
+                    "LaunchTime": "2023-04-29T06:00:28+00:00",
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "Placement": {
+                        "AvailabilityZone": "us-east-1b",
+                        "GroupName": "",
+                        "Tenancy": "default"
+                    },
+                    "PrivateDnsName": "ip-172-31-47-81.ec2.internal",
+                    "PrivateIpAddress": "172.31.47.81",
+                    "ProductCodes": [],
+                    "PublicDnsName": "",
+                    "State": {
+                        "Code": 80,
+                        "Name": "stopped"
+                    },
+                    "StateTransitionReason": "User initiated",
+                    "SubnetId": "subnet-0c906b40c4caa7dff",
+                    "VpcId": "vpc-0b4f6ee0b90b68975",
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/xvda",
+                            "Ebs": {
+                                "AttachTime": "2023-04-28T23:24:36+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0cfc3564fc8eb5097"
+                            }
+                        },
+                        {{
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2023-04-28T23:24:36+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-01978923a790f4c04"
+                            }
+                        }
+                    ],
+                    "ClientToken": "Cours-EC2In-RAF8F73UOHOJ",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "NetworkInterfaces": [
+                        {
+                            "Attachment": {
+                                "AttachTime": "2023-04-28T23:24:35+00:00",
+                                "AttachmentId": "eni-attach-00e5880b266bf22a3",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupName": "securityGroupTwo",
+                                    "GroupId": "sg-02e51c6c168388456"
+                                },
+                                {
+                                    "GroupName": "isolation-security-group",
+                                    "GroupId": "sg-03b98decb6ce2f315"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "0e:6b:a0:59:b4:53",
+                            "NetworkInterfaceId": "eni-0f671ad53466b2bac",
+                            "OwnerId": "759936737407",
+                            "PrivateDnsName": "ip-172-31-47-81.ec2.internal",
+                            "PrivateIpAddress": "172.31.47.81",
+                            "PrivateIpAddresses": [ {
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-47-81.ec2.internal",
+                                    "PrivateIpAddress": "172.31.47.81"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-0c906b40c4caa7dff",
+                            "VpcId": "vpc-0b4f6ee0b90b68975",
+                            "InterfaceType": "interface"
+                        }
+                    ],
+                    "RootDeviceName": "/dev/xvda",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupName": "securityGroupTwo",
+                            "GroupId": "sg-02e51c6c168388456"
+                        },
+                        {
+                            "GroupName": "isolation-security-group",
+                            "GroupId": "sg-03b98decb6ce2f315"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "StateReason": {
+                        "Code": "Client.InstanceInitiatedShutdown",
+                        "Message": "Client.InstanceInitiatedShutdown: Instance initiated shutdown"
+                    },
+                    "Tags": [
+                        {
+                            "Key": "aws:cloudformation:stack-id",
+                            "Value": "arn:aws:cloudformation:us-east-1:759936737407:stack/Course4Resources/ceaf3dd0-e61b-11ed-b19b-12bcd2b05feb"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "LAMP02"
+                        },
+                        {
+                            "Key": "aws:cloudformation:stack-name", "Value": "Course4Resources"
+                        },
+                        {
+                            "Key": "aws:cloudformation:logical-id",
+                            "Value": "EC2Instance2"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 1
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "optional",
+                        "HttpPutResponseHopLimit": 1,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2023-04-28T23:24:35+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default"
+                    },
+                    "CurrentInstanceBootMode": "legacy-bios"     "CurrentInstanceBootMode": "legacy-bios"
+                }
+            ],
+            "OwnerId": "759936737407",
+            "RequesterId": "043234062703",
+            "ReservationId": "r-07770e99854110de0"
+        }
+    ]
+}
+:
+:
